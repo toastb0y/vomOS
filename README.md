@@ -6,4 +6,4 @@ so until then, if you plan on making apps for vomOS, or just want to see what it
 or maybe you can use this to try and make vomOS or something similar yourself.
 either way, I hope you wont mind waiting a bit, haha
 
-*every app should be kept in it's own folder inside the "main.system" folder, with it's own lua file(s) and it's art assets kept in the "2dAssets" folder.
+*every app should be kept in it's own folder inside the "apps" folder, located inside "m_system" with it's own lua file(s) and it's art assets kept in the "2dAssets" folder.
