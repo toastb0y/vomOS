@@ -1,7 +1,7 @@
 -- this is where the main code will go.
 --this main.lua file will act as the core of vomOS
 
-local json = require("dkjson")
+local json = require("m_libraries/dkjson")
 
 function love.load()
     -- read settings.json and decode it
