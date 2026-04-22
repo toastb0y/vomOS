@@ -1,10 +1,8 @@
--- this is where the main code will go.
---this main.lua file will act as the core of vomOS
-
+-- load in the dkjson library
 local json = require("m_libraries/dkjson")
 
 function love.load()
-    -- read settings.json and decode it
+    -- read json and decode
     local data = love.filesystem.read("settings.json")
     local settings = json.decode(data)
 
@@ -22,7 +20,7 @@ function love.load()
     love.mouse.setCursor(cursor)
 
     love.window.setIcon(love.image.newImageData("m_assets/vom_icon.png"))
-    love.window.setTitle("vomOS test build")
+    love.window.setTitle("title pending, might change")
 end
 
 function love.update(dt)
@@ -30,6 +28,8 @@ function love.update(dt)
 end
 
 function love.draw()
+    love.graphics.setBackgroundColor(0, 0, 0.4)
+    
     love.graphics.print("vomOS test window", 0, 0)
     love.graphics.print("Press F11 to toggle fullscreen", 0, 10)
     love.graphics.print("Press ESC to quit", 0, 20)
