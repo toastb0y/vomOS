@@ -3,8 +3,8 @@ local json = require("m_libraries/dkjson")
 
 function love.load()
     -- read json and decode
-    local data = love.filesystem.read("settings.json")
-    local settings = json.decode(data)
+    local data = love.filesystem.read("userdata.json")
+    local userdata = json.decode(data)
 
     canEsc = true
    
@@ -20,7 +20,7 @@ function love.load()
     love.mouse.setCursor(cursor)
 
     love.window.setIcon(love.image.newImageData("m_assets/vom_icon.png"))
-    love.window.setTitle("title pending, might change")
+    love.window.setTitle("ttt")
 end
 
 function love.update(dt)
